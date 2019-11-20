@@ -6,21 +6,13 @@ Type "help", "copyright", "credits" or "license()" for more information.
 		 ["Michael Palin", "John Cleese", "Terry Gilliam", "Eric Idle",
 		  "Terry Jones"]]]
 >>> 
->>> def print_lol (the_list):
+>>> def print_lol(the_list):
 	for each_item in the_list:
-		if isinstance(each_item, list):
-			print_lol(each_item)
-		else
-		
-SyntaxError: invalid syntax
->>> def print_lol (the_list):
-	for each_item in the_list:
-		if isinstance(each_item, list):
+		if isinstance (each_item, list):
 			print_lol(each_item)
 		else:
 			print(each_item)
 
->>> 
 >>> print_lol(movies)
 The Holy Grail
 1975
